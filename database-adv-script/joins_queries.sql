@@ -30,6 +30,7 @@ SELECT
     AS review_date
 FROM Property p
 LEFT JOIN Review r ON p.property_id = r.property_id;
+ORDER BY p.name ASC, r.created_at DESC;
 
 --====================================
 --Full Outer Join
